@@ -14,6 +14,10 @@ public class Main {
         my_dog.can_fight(3);
         my_dog2.can_fight(4.0);
         my_dog2.can_fight(4);
+        Dog my_dog3 = new Dog("Dog" , "NIPA" , "Neri" ,"Fakase Kalo");
+        my_dog3.can_move(5);
+        my_dog3.can_fight(5);
+
 
     }
 
