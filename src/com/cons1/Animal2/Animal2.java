@@ -1,4 +1,4 @@
-package com.cons1.Animal2;
+ package com.cons1.Animal2;
 
 class Animal2 {
       String type;
