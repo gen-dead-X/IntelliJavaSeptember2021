@@ -26,4 +26,11 @@ public class Program1 {
         System.out.print("The area is : " + area);
     }
 
+    public static void main(String[] args) {
+        Program1 ob = new Program1(5, 6);
+
+        ob.calcArea();
+        ob.display();
+    }
+
 }

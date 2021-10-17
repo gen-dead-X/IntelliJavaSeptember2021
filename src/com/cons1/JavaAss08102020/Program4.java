@@ -22,12 +22,12 @@ public class Program4 {
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the name of Person 1 : ");
-        String name1 = sc.nextLine();
+        String name1 = sc.next();
         System.out.println("Enter the age of person 1 : ");
         int age1 = sc.nextInt();
 
         System.out.println("Enter the name of Person 2 : ");
-        String name = sc.nextLine();
+        String name = sc.next();
         System.out.println("Enter the age of person 2 : ");
         int age2 = sc.nextInt();
 

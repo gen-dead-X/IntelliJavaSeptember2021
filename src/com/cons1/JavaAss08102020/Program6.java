@@ -33,6 +33,9 @@ public class Program6 {
     }
 
     public static void main(String[] args) {
+
+        long start = System.currentTimeMillis();
+// some time passes
         System.out.println("The side of the cube is : 2");
         Program6 area_cube = new Program6(2);
 
@@ -41,6 +44,9 @@ public class Program6 {
 
         System.out.println("The radius of the sphere is : 2");
         Program6 area_sphere = new Program6(2.0 , 0 );
+
+        long end = System.currentTimeMillis();
+        System.out.println("Total Time taken is " + (end - start)/1000.0 + " seconds.");
 
     }
 }
