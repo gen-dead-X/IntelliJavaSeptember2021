@@ -14,19 +14,16 @@ public class program8 {
         this.b = b;
     }
 
-    public void add(){
-
+    public void add() {
         System.out.print("The sum is : " + (a + b) + "\n");
-
     }
 
-    public void subtract(){
-        System.out.print("The subtraction is : " + (a - b) + "\n");
-
+    public void subtract() {
+        System.out.print("The subtraction is : " + (a - b) + "\n" );
     }
 
-    public void isequal(){
-        if( a == b)
+    public void isequal() {
+        if (a == b)
             System.out.println("They are equal! \n");
         else
             System.out.println("They are not equal! \n");
@@ -39,7 +36,7 @@ public class program8 {
         int a = sc.nextInt();
         int b = sc.nextInt();
 
-        program8 ob = new program8(a , b);
+        program8 ob = new program8(a, b);
 
         ob.add();
         ob.subtract();
