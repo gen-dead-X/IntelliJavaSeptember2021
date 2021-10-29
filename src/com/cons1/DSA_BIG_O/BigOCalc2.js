@@ -17,4 +17,4 @@ function anotherFunChallenge(input) {
 }
 
 // 6 x O(1) + 5 x O(n)
-//O(6 + 5n)
+// O(6 + 5n)
