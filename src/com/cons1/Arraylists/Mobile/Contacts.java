@@ -68,8 +68,8 @@ public class Contacts {
 
     public void searchContacts(String contactName, int position) {
         int pos = searchContacts(contactName);
-        if(pos >= 1)
-            System.out.println("Found Contact! At position " + pos);
+        if(pos >= 0)
+            System.out.println("Found Contact! " + contactName + " with number: " + myNumbers.get(pos) +  " At position " + pos);
         else
             System.out.println("Not found!");
     }
