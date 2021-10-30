@@ -23,6 +23,7 @@ public class Main {
                 case 4 -> removeCart();
                 case 5 -> searchCart();
                 case 6 -> quit = true;
+                    
             }
         }
     }
