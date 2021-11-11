@@ -1,4 +1,4 @@
-package com.cons1.JavaAss08102020.Ass10112021.Program2;
+package com.cons1.JavaAssignmentsRCC.Ass10112021.Program2;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.cons1.JavaAss08102020.Ass10112021.Program2;
+package com.cons1.JavaAssignmentsRCC.Ass10112021.Program2;
 
 //2. Employee and ProductionWorker Classes:
 //        Design a class named Employee. The class should keep the following information in fields:

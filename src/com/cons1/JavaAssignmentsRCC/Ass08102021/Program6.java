@@ -1,10 +1,8 @@
-package com.cons1.JavaAss08102020;
+package com.cons1.JavaAssignmentsRCC.Ass08102021;
 
 //        Create a class named Figure. Make cube, cylinder and sphere as object of
 //        the class Figure and calculate their surface area using concept of
 //        constructor overloading.
-
-import java.sql.PreparedStatement;
 
 public class Program6 {
 

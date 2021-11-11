@@ -1,4 +1,4 @@
-package com.cons1.JavaAss08102020;
+package com.cons1.JavaAssignmentsRCC.Ass08102021;
 
 /*Create a class Person having name and age of a Person as data members.
  Write a method that compare two persons by their age and print the

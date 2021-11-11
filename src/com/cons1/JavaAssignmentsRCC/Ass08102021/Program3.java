@@ -1,4 +1,4 @@
-package com.cons1.JavaAss08102020;
+package com.cons1.JavaAssignmentsRCC.Ass08102021;
 
 /*3. Create a class Box with three instance variables:
         a. width : int

@@ -1,4 +1,4 @@
-package com.cons1.JavaAss08102020;
+package com.cons1.JavaAssignmentsRCC.Ass08102021;
 
 //        Design a TestScores class that has fields to hold three test scores and a
 //        method that returns the average of the test scores. Demonstrate the class

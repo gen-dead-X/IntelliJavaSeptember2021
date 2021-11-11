@@ -1,4 +1,4 @@
-package com.cons1.JavaAss08102020;
+package com.cons1.JavaAssignmentsRCC.Ass08102021;
 
 //10. Create a class Triangle with two instance variables:
 //        a. base: int

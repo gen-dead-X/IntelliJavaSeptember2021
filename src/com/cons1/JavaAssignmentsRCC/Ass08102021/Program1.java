@@ -1,4 +1,4 @@
-package com.cons1.JavaAss08102020;
+package com.cons1.JavaAssignmentsRCC.Ass08102021;
 
 //1. Create a class Rectangle with two instance variables:
 //        a. length : int

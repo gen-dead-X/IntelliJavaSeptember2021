@@ -1,4 +1,4 @@
-package com.cons1.JavaAss08102020;
+package com.cons1.JavaAssignmentsRCC.Ass08102021;
 
 //9. Design a Payroll class that has fields for an employee’s name, ID number,
 //        hourly pay rate and number of hours worked. Write the appropriate

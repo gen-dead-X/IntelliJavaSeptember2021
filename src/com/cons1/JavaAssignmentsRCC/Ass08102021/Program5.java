@@ -1,4 +1,4 @@
-package com.cons1.JavaAss08102020;
+package com.cons1.JavaAssignmentsRCC.Ass08102021;
 /*
         Write a program using parameterized constructors to calculate area of a
         square and a rectangle.

@@ -1,4 +1,4 @@
-package com.cons1.JavaAss08102020.Ass10112021.Program2;
+package com.cons1.JavaAssignmentsRCC.Ass10112021.Program2;
 
 //        Next, write a class named ProductionWorker that inherits from the
 //        Employee class. The ProductionWorker class should have fields to hold the
