@@ -3,6 +3,8 @@ package com.cons1.JavaAssignmentsRCC.Ass25112021;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import static kotlin.reflect.jvm.internal.impl.builtins.StandardNames.FqNames.string;
+
 public class Queue {
     static ArrayList<String> new_list_says_Hi = new ArrayList<String>();
     static Scanner sc = new Scanner(System.in);
@@ -13,7 +15,9 @@ public class Queue {
         int choice = 0;
         printInstructions();
         while(!quit){
+            System.out.println("Your Choice : ");
             choice = sc.nextInt();
+            sc.nextLine();
             switch (choice) {
                 case 0 -> quit = true;
                 case 1 ->
@@ -33,30 +37,31 @@ public class Queue {
 //        }
         System.out.print("Enter the String to add : ");
         String string = sc.nextLine();
-        sc.nextLine();
+        new_list_says_Hi.add(string);
 //        System.out.print("Enter the position to remove : ");
 //        int pos = sc.nextInt();
 //        sc.nextLine();
-        new_list_says_Hi.add(string);
 
     }
     public static void removeElements(){
-        System.out.print("Enter the String to remove : ");
-        String string = sc.nextLine();
-        sc.nextLine();
+//        System.out.print("Enter the String to remove : ");
+//        String string = sc.nextLine();
+//        sc.nextLine();
         System.out.print("Enter the position to remove : ");
         int pos = sc.nextInt();
         sc.nextLine();
-        new_list_says_Hi.add(string);
-        for(int i = 0; i <= pos; i++ ){
-            if(i == pos)
-                new_list_says_Hi.remove(string);
-        }
+//        new_list_says_Hi.(string);
+        new_list_says_Hi.remove(pos - 1);
+//        for(int i = 0; i <= pos; i++ ){
+//            if(i == pos)
+//                new_list_says_Hi.remove(string);
+//        }
 
     }
     public static void display(){
         for (int i = 0; i < new_list_says_Hi.size(); i++) {
             System.out.print((i+1) + ". " + new_list_says_Hi.get(i));
+            System.out.println();
         }
     }
     public static void printInstructions(){

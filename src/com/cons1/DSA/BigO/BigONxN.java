@@ -1,4 +1,4 @@
-package com.cons1.DSA_BIG_O;
+package com.cons1.DSA.BigO;
 
 public class BigONxN {
     int num = 0;

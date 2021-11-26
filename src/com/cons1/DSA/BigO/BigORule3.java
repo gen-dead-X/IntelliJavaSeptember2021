@@ -1,4 +1,4 @@
-package com.cons1.DSA_BIG_O;
+package com.cons1.DSA.BigO;
 //Different terms for input.
 public class BigORule3 {
     public static void justInputs(int num1, int num2){
