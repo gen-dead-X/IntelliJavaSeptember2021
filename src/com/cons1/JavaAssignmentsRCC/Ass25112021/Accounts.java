@@ -33,9 +33,9 @@ public class Accounts {
         System.out.print("\nYour Account no : " + this.Accountno);
         System.out.print("\nThe balance is : " + this.Balance + "\n");
     }
-    public void withdrawn(long dip_amt){
-        this.Balance -= dip_amt;
-        System.out.println("Balance after withdrawl of " + dip_amt + " is " + this.Balance);
+    public void withdrawn(long with_amt){
+        this.Balance -= with_amt;
+        System.out.println("Balance after withdrawl of " + with_amt + " is " + this.Balance);
     }
     public void deposit(long dip_amt){
         this.Balance += dip_amt;
