@@ -3,10 +3,8 @@ package com.cons1.JavaAssignmentsRCC.Ass25112021;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import static kotlin.reflect.jvm.internal.impl.builtins.StandardNames.FqNames.string;
-
 public class Queue {
-    static ArrayList<String> new_list_says_Hi = new ArrayList<String>();
+    static ArrayList<String> array = new ArrayList<String>();
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -37,7 +35,7 @@ public class Queue {
 //        }
         System.out.print("Enter the String to add : ");
         String string = sc.nextLine();
-        new_list_says_Hi.add(string);
+        array.add(string);
 //        System.out.print("Enter the position to remove : ");
 //        int pos = sc.nextInt();
 //        sc.nextLine();
@@ -51,7 +49,7 @@ public class Queue {
         int pos = sc.nextInt();
         sc.nextLine();
 //        new_list_says_Hi.(string);
-        new_list_says_Hi.remove(pos - 1);
+        array.remove(pos - 1);
 //        for(int i = 0; i <= pos; i++ ){
 //            if(i == pos)
 //                new_list_says_Hi.remove(string);
@@ -59,8 +57,8 @@ public class Queue {
 
     }
     public static void display(){
-        for (int i = 0; i < new_list_says_Hi.size(); i++) {
-            System.out.print((i+1) + ". " + new_list_says_Hi.get(i));
+        for (int i = 0; i < array.size(); i++) {
+            System.out.print((i+1) + ". " + array.get(i));
             System.out.println();
         }
     }
