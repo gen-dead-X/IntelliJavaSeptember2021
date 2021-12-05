@@ -2,7 +2,7 @@ package com.cons1.JavaAssignmentsRCC.Ass25112021;
 
 public class Main {
     public static void main(String[] args) {
-        String Holdersname = "Joyrudra Biswas";
+        String Holdersname = "Nipa Naskar";
         long Accountno = 789456231;
         double balance = 4000000.0;
         double intrest = 5.0;
