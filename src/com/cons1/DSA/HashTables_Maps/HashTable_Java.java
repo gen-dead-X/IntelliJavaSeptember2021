@@ -17,9 +17,5 @@ public class HashTable_Java {
         for( String key : hashtable.keySet()) {
             System.out.println(hashtable.get(key));
         }
-
-
-
-
     }
 }

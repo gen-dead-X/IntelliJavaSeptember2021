@@ -12,7 +12,7 @@ public class MergedSortedArrays {
             if(arr1[pos1] < arr2[pos2]){
                 arr[i] = arr1[pos1++];
             }
-            else if(arr1[pos1] > arr2[pos2]){
+            else if(arr2[pos2] < arr1[pos1]){
                 arr[i] = arr2[pos2++];
             }
             else{
@@ -21,6 +21,10 @@ public class MergedSortedArrays {
             }
 
         }
+        if((arr1.length) != pos1)
+            arr[arr.length - 1] = arr1[pos1];
+        if((arr2.length) != pos2)
+            arr[arr.length - 1] = arr2[pos2];
 
         for(int i = 0 ; i < arr.length ; i++){
             System.out.print(arr[i] + " ");
