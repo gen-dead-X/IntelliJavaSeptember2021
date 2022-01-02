@@ -19,7 +19,6 @@ public class MergedSortedArrays {
                 arr[i++] = arr1[pos1++];
                 arr[i] = arr2[pos2++];
             }
-
         }
         if((arr1.length) != pos1)
             arr[arr.length - 1] = arr1[pos1];
