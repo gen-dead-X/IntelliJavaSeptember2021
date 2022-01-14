@@ -18,4 +18,24 @@ Upload only output screen below
  */
 
 public class Student {
+    String name;
+    String id_card;
+    double grade;
+    int age;
+    String Address;
+
+    public Student(String name, String id_card, double grade, int age, String address) {
+        this.name = name;
+        this.id_card = id_card;
+        this.grade = grade;
+        this.age = age;
+        Address = address;
+    }
+
+    boolean isPassed(double grade){
+        if(grade > 80.0)
+            return true;
+        else
+            return false;
+    }
 }
