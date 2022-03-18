@@ -3,8 +3,8 @@ package com.cons1.SemesterExam5th;
 /*
 In main class, create one Graduate object and one Undergrad object. For each object,
 provide a grade and display the results of the isPassed method.
-Upload only output screen below
- */
+Upload only output screen below.
+*/
 
 public class Main {
     public static void main(String[] args) {
