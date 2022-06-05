@@ -5,7 +5,7 @@ import java.util.*;
 import static kotlin.reflect.jvm.internal.impl.builtins.StandardNames.FqNames.array;
 
 public class BinarySearch {
-    public static void main(String[] args) {
+    public static void main(String[] args) { //  Wrong Program, Correct and Optimized Version is in LeetCode Folder
         int[] arr = {8, 5, 2, 6, 9, 3, 1, 4, 0, 7};
         Arrays.sort(arr);
         System.out.println(Arrays.toString(arr));

@@ -33,16 +33,16 @@ class PrimeMailReads {
     }
 
     public static void primeremoval(){
-//        printList();
+        printList();
         emails.add(0,-2);
         for(int i = 1; i < emails.size(); i++) {
             if (isprime(i) == 2 ) {
                 emails.set(i, -1);
             }
         }
-//        printList();
+        printList();
         emails.remove(0);
-//        printList();
+        printList();
 
     }
 
@@ -52,7 +52,7 @@ class PrimeMailReads {
             if(n % i == 0)
                 c++;
         }
-//        System.out.println("c= " + c);
+        System.out.println("c= " + c);
         return c;
     }
 
