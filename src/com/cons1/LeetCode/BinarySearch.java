@@ -20,6 +20,7 @@ public class BinarySearch {
                 max = mid - 1;
             else
                 return mid;
+            //sout just to update
         }
         return -1;
     }
