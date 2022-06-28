@@ -8,41 +8,47 @@ Output: "fl"
 */
 
 
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
 public class LongestCommonPrefix {
-    public static void main(String[] args) {
+    public String longestCommonPrefix(String[] strs) {
+
 //        String strs[] = {"flower", "flow", "flight"};
-        String strs[] = {"fluler", "flu", "fluwer", "fluwer", "fluwer", "fluwer"};
-        char cp = '\0';
-        int c = 0;
-        int j = 0;
-        StringBuilder s = new StringBuilder();
+        HashMap< Integer, Character> map = new HashMap<Integer, Character>();
 
-        for (int i = 0; i < strs.length; i++) {
-            cp = strs[i].charAt(i);
-//            System.out.println(cp);
+        int len = strs[0].length();
 
-            while (j < strs.length) {
-//                System.out.println(strs[j].charAt(i));
-                if (cp == strs[j].charAt(i)) {
-                    c++;
-                }
+        String str = "";
 
+        for (int i = 0 ; i < len ; i++) {
+            char ch = strs[i].charAt(i);
 
-                j++;
+            if(strs[i].length() < len)
+                len = strs[i].length();
+            if(i == 0){
+                for (int j = i; i < strs[j].length(); j++)
+                    map.put(i , ch);
             }
-            if (c == strs.length)
-                s.append(strs[i].charAt(i));
+            for (int j = i; i < strs[j].length(); j++)
 
-            j = 0;
+                    map.put(i, ch);
 
-            c = 0;
-
-            if(strs[i].length() < strs.length)
-                break;
         }
 
-        System.out.println(s);
+        for (Integer name : map.keySet()){
 
+        }
+
+
+
+
+
+
+
+
+        return strs[0];
     }
 }
 
