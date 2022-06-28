@@ -8,19 +8,20 @@ public class BinarySearch {
         }
         return -1;
     }*/
+    public static int search(int[] nums, int target) { //Optimized Binary Searchi
+        int min = 0;
+        int max = nums.length - 1;
+        int mid;
 
-    public static int search(int[] nums, int target) { //Optimized Binary Search
-        int max = nums.length - 1, min = 0;
-        int mid = 0;
-        for (int i = 0; i < nums.length; i++){
-            mid = (min + max) / 2;
-            if(target > nums[mid])
-                min = mid + 1;
-            else if(target < nums[mid])
+        while (max >= min) {
+            mid = min + (max - min) / 2;
+
+            if(nums[mid] > target)
                 max = mid - 1;
+            else if(nums[mid] < target)
+                min = mid + 1;
             else
                 return mid;
-            //sout just to update
         }
         return -1;
     }

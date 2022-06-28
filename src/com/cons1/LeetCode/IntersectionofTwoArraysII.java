@@ -82,7 +82,7 @@ public class IntersectionofTwoArraysII {
 //        int[] arr = new int[length1 + length2]; //I'm using less space by returning the same availabe array. Nums1 or Nums2
         int i = 0 , j = 0, k = 0;
 
-        while (i < length1 && j < length2) {
+/*        while (i < length1 && j < length2) {
             if (nums1[i] < nums2[j])
                 i++;
             else if (nums1[i] > nums2[j])
@@ -93,6 +93,19 @@ public class IntersectionofTwoArraysII {
             }
         }
 
+        return Arrays.copyOfRange(nums1, 0 , k);*/
+
+        while( i < length1 && j < length2){
+            if(nums1[i] < nums2[j])
+                i++;
+            else if(nums1[i] > nums2[j])
+                j++;
+            else {
+                nums1[k++] = nums2[j++];
+                i++;
+            }
+
+        }
         return Arrays.copyOfRange(nums1, 0 , k);
     }
 

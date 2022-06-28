@@ -30,7 +30,10 @@ public class MergedSortedArrays {
         }
     }*/
    public static int[] merge(int[] nums1, int m, int[] nums2, int n) {
-       /* Input: nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3
+       /* Input: nums1 = [1,2,3,0,0,0],
+                               p1   p
+          m = 3, nums2 = [2,5,6], n = 3
+                              p2
        Output: [1,2,2,3,5,6]
        Explanation: The arrays we are merging are [1,2,3] and [2,5,6].
        The result of the merge is [1,2,2,3,5,6] with the underlined elements coming from nums1.*/
