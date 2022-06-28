@@ -13,7 +13,7 @@ import java.util.Iterator;
 import java.util.Map;
 
 public class LongestCommonPrefix {
-    public String longestCommonPrefix(String[] strs) {
+ /*   public String longestCommonPrefix(String[] strs) { // my bullshits approach
 
 //        String strs[] = {"flower", "flow", "flight"};
         HashMap< Integer, Character> map = new HashMap<Integer, Character>();
@@ -48,7 +48,24 @@ public class LongestCommonPrefix {
 
 
 
+
         return strs[0];
+    }*/
+    public static String longestCommonPrefix(String[] strs){
+        if(strs.length == 0) return null;
+
+        String s = strs[0];
+
+        for (int i  = 1; i < strs.length; i++)
+            while(strs[i].indexOf(s) != 0)
+                s = s.substring(0, s.length() - 1);
+        return s;
+    }
+
+    public static void main(String[] args){
+        String strs[] = {"flower", "flow", "flight"};
+
+        System.out.println(longestCommonPrefix(strs));
     }
 }
 
