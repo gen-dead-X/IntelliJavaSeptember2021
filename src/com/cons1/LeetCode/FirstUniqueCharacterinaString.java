@@ -25,7 +25,6 @@ public class FirstUniqueCharacterinaString {
             }
         }
 
-
         return min!=Integer.MAX_VALUE? min : -1;
     }
 
