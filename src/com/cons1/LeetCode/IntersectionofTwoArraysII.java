@@ -71,13 +71,13 @@ public class IntersectionofTwoArraysII {
         return res;
     }*/
 
-    public static int[] intersect(int[] nums1, int[] nums2) { //Much more optimized Version
+/*    public static int[] intersect(int[] nums1, int[] nums2) { //Much more optimized Version
 
         int length1 = nums1.length;
         int length2 = nums2.length;
 
         Arrays.sort(nums1);
-        Arrays.sort(nums2);
+        Arrays.sort(nums2);*/
 
 //        int[] arr = new int[length1 + length2]; //I'm using less space by returning the same availabe array. Nums1 or Nums2
         int i = 0 , j = 0, k = 0;
@@ -95,7 +95,7 @@ public class IntersectionofTwoArraysII {
 
         return Arrays.copyOfRange(nums1, 0 , k);*/
 
-        while( i < length1 && j < length2){
+/*        while( i < length1 && j < length2){
             if(nums1[i] < nums2[j])
                 i++;
             else if(nums1[i] > nums2[j])
@@ -107,7 +107,29 @@ public class IntersectionofTwoArraysII {
 
         }
         return Arrays.copyOfRange(nums1, 0 , k);
+    }*/
+
+    public static int[] intersect(int[] nums1, int[] nums2) { //Much more optimized Version
+
+        Arrays.sort(nums1);
+        Arrays.sort(nums2);
+
+
+        int p1 = 0; int p2 = 0; int k = 0;
+//        int arr[] = new int[nums1.length * nums2.length];
+        while (p1 < nums1.length && p2 < nums2.length) {
+            if(nums1[p1] > nums2[p2])
+                p2++;
+            else if(nums1[p1] < nums2[p2])
+                p1++;
+            else {
+                nums1[k++] = nums1[p1++];
+                p2++;
+            }
+        }
+        return Arrays.copyOfRange(nums1, 0 , k);
     }
+
 
     public static void main(String[] args) {
         int nums1[] = {9,4,9,8,4};
