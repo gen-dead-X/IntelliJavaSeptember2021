@@ -69,7 +69,7 @@ class Parser{
 }
 
 
-class Solution {
+class Solution1 {
 
     public static void main(String[] args) {
         Parser parser = new Parser();
