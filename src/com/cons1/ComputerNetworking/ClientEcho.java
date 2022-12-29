@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class ClientEcho {
     public static void main(String[] args)throws IOException {
-        Socket clientsocket = new Socket("192.168.0.105", 1235);
+        Socket clientsocket = new Socket("192.168.29.201", 1235);
         Scanner sc1 = new Scanner(System.in);
 
         System.out.println("Client is Ready!");
