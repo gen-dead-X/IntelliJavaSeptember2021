@@ -25,7 +25,7 @@ import java.util.*;
 */
 
 public class mostFrequentEvenNumber {
-    public static int mostFrequentEven(int[] nums) {
+/*    public static int mostFrequentEven(int[] nums) {
         HashMap<Integer, Integer> map = new HashMap<>();
         for (int num = 0; num < nums.length; num++) {
             if (map.containsKey(nums[num])) {                      //nums = [0,1,2,2,4,4,1]
@@ -38,31 +38,43 @@ public class mostFrequentEvenNumber {
         }
 
         System.out.println();
-        int min = Integer.MAX_VALUE;
-        int r = 0;
-        int c = 0;
+        int min = Integer.MIN_VALUE;
+        int result = -1;
 
         //for (String name : gfg.keySet())
-        for (int key : map.keySet()) {
-            if (key % 2 == 0) {
-                c = 1;
-                if (map.get(key) >= r ){
-
-                    if(key < min)
-                        min = key;
-                    if(map.get(min) < map.get(key))
-                        min = map.get(key);
-                    r = map.get(key);
-                }
+        for(Map.Entry<Integer, Integer> element : map.entrySet()) {
+            int value = element.getValue(), key = element.getKey();
+            if(value > min){
+                min = value;
+                result = key;
+            }else if(value == min){
+                if(key < result) result = key;
             }
         }
         System.out.println(min + " = " + map.get(min));
+        return  result;
+    }*/
 
-        if (c == 0) {
-            return -1;
+    public static int mostFrequentEven(int[] nums) {
+        HashMap<Integer, Integer> mapEvenRepeat = new HashMap<>();
+        int len = nums.length;
+        for(int i = 0; i < len; i++){
+            if(nums[i] % 2 == 0){
+                mapEvenRepeat.put(nums[i], mapEvenRepeat.getOrDefault(nums[i], 0) + 1);
+            }
         }
-        else
-            return min;
+        int min = Integer.MIN_VALUE;
+        int result = -1;
+        for(Map.Entry<Integer, Integer> element : mapEvenRepeat.entrySet()) {
+            int value = element.getValue(), key = element.getKey();
+            if(value > min){
+                min = value;
+                result = key;
+            }else if(value == min){
+                if(key < result) result = key;
+            }
+        }
+        return result;
     }
 
     public static void main(String[] args) {
