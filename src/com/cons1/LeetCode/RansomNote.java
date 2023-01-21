@@ -6,7 +6,7 @@ public class RansomNote {
     public static boolean canConstruct(String ransomNote, String magazine) {
         if (magazine.length() < ransomNote.length()) return false;
         HashMap<Character, Integer> map1 = new HashMap<Character, Integer>();
-//        HashMap<Character, Integer> map2 = new HashMap<Character, Integer>();
+
 
         for (int i = 0; i < magazine.length(); i++) {
             if (map1.containsKey(magazine.charAt(i)))
